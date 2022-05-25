@@ -1,0 +1,16 @@
+.table_row{
+    width: 100%;
+}
+
+.table_row th{
+    width: calc(100%/7);
+    border-collapse: collapse;
+}
+
+.day_title{
+    text-align: center;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+}

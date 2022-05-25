@@ -1,0 +1,40 @@
+ p{
+    margin: 10px 0;
+}
+
+.details a{
+    border-bottom: rgba(51, 51, 51, 0.164) solid 1px;
+}
+
+.details a{
+    color: black;
+    text-decoration: none;
+}
+
+.underline:hover{
+    background-color: #778beb;
+}
+
+.underline:hover a{
+    color: white;
+}
+
+.underline{
+    border-bottom: rgba(51, 51, 51, 0.164) solid 1px;
+}
+
+
+.details ion-icon{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.details ion-icon:hover{
+    color: #333;
+}
+
+.titles{
+    background-color: #dfdfdf;
+    color: black;
+    font-size: 20px;
+}

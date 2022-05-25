@@ -1,0 +1,10 @@
+.calendar_row {
+  margin: auto;
+  justify-content: center;
+  border-top: 2px silver solid;
+  margin-top: 20px;
+}
+
+.calendar_row table tr {
+  width: calc(100% / 7);
+}

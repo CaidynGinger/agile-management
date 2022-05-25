@@ -1,0 +1,25 @@
+button {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem 0;
+  border: 1px solid #778beb;
+  color: white;
+  background: #778beb;
+  /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.26); */
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #546de5;
+  border-color: #546de5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}
+
+.button:hover ion-icon{
+    color: white;
+}

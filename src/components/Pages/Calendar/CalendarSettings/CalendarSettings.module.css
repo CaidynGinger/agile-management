@@ -1,0 +1,21 @@
+.todayBtn{
+    padding-right: 10px;
+}
+
+.arrowsBtn{
+    width: 40px;
+    padding: 0px;
+}
+
+.date_range{
+    padding-left: 10px;
+    margin-top: 9px;
+}
+
+.date_range p{
+    margin-bottom: 0px;
+}
+
+.add_event{
+    font-size: 60px;
+}
