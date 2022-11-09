@@ -5,29 +5,9 @@ import { Outlet } from "react-router-dom";
 import classes from "./Doctor.module.css";
 import { Item } from "./UI/Item";
 
-const doctorsList = [
-  {
-    id: "2110020",
-    name: "Kiara Bahadur",
-    specialization: "Podiatrists",
-    roomNumber: "4",
-  },
-  {
-    id: "2003454",
-    name: "Wilma Ray",
-    specialization: "Physiologist",
-    roomNumber: "1",
-  },
-  {
-    id: "21284012",
-    name: "Allen Laing",
-    specialization: "General Practitioners",
-    roomNumber: "2",
-  },
-];
-
-export const Doctor = () => {
-  const content = doctorsList.map((doctor) => {
+export const Doctor = props => {
+  console.log(props);
+  const content = props.DoctorList.map((doctor) => {
     return (
       <div key={doctor.id} className={classes.underline}>
         <Item  doctor={doctor} />
@@ -46,7 +26,10 @@ export const Doctor = () => {
                 <p>ID</p>
               </Col>
               <Col>
-                <p>Doctor Name</p>
+                <p>First Name</p>
+              </Col>
+              <Col>
+                <p>Last Name</p>
               </Col>
               <Col>
                 <p>Specialization</p>

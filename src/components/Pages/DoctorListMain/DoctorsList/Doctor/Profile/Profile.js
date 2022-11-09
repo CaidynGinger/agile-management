@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
@@ -11,11 +11,30 @@ import classes from "./Profile.module.css";
 export const Profile = () => {
   let params = useParams();
 
-  
+  const [Doctor, setDoctor] = useState({});
+  const [canEdit, setCanEdit] = useState(false);
+
+  useEffect(() => {
+    // get doctor details
+    setDoctor(
+      {
+        id: 1,
+        firstName: "Caidyn",
+        lastName: "Ginger",
+        specialization: "Something",
+        roomNumber: 1,
+      },
+    );
+  }, []);
+
+  console.log(Doctor);
+
 
 
   return (
     <React.Fragment>
+        <div className={classes.noEdit}></div>
+
       <Container>
         <Row>
           <h3 className={classes.header}>Doctor ID: {params.doctorId}</h3>
@@ -31,9 +50,15 @@ export const Profile = () => {
               <hr></hr>
               <h4>Personal Details</h4>
               <Row>
-                {}
                 <Col>
-                  <p>Burther</p>
+                  <Input
+                    label="First Name"
+                    type="text"
+                    value={Doctor.firstName}
+                  />
+                </Col>
+                <Col>
+                  <p>{Doctor.lastName}</p>
                 </Col>
                 <Col>
                   <p>21</p>

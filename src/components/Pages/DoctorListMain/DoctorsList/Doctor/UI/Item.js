@@ -12,7 +12,10 @@ export const Item = (props) => {
           <p>{doctor.id}</p>
         </Col>
         <Col>
-          <p>{doctor.name}</p>
+          <p>{doctor.firstName}</p>
+        </Col>
+        <Col>
+          <p>{doctor.lastName}</p>
         </Col>
         <Col>
           <p>{doctor.specialization}</p>

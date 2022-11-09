@@ -8,7 +8,7 @@ export const Input = ({
   onClick,
   onBlur,
   onChange,
-  value
+  value,
 }) => {
   return (
     <div className={classes.group}>

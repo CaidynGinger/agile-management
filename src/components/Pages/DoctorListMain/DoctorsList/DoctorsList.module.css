@@ -1,3 +1,34 @@
 .doctor_list{
     width: 100%;
 }
+
+.badge{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    background-color: #778beb;
+    width: 60px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    overflow: hidden;
+    border-radius: 1000px;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+
+}
+
+.badge:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    background-color: #546de5;
+
+}
+
+.badge ion-icon{
+    margin-top: 10px;
+}
+
+.badge ion-icon:hover{
+    color: white;
+}

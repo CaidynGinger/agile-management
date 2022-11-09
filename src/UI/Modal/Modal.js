@@ -31,6 +31,8 @@ const ModalOverlay = (props) => {
         <div>{props.children}</div>
       </div>
     );
+  } else if (props.type === "Test") {
+    return <>{props.children}</>;
   }
 };
 
